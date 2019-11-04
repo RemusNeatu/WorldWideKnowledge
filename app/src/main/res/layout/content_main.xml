@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellowBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/description"
+        style="@android:style/Widget.TextView.PopupMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="WorldWide\nKnowledge"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/earth"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/description"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image1" />
+
+    <Button
+        android:id="@+id/training_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="264dp"
+        android:layout_height="60dp"
+        android:drawableStart="@drawable/book_image"
+        android:text="Start training session"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59"
+        android:onClick="trainingSession"   />
+
+    <Button
+        android:id="@+id/test_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="264dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="120dp"
+        android:drawableStart="@drawable/test4"
+        android:text="Test your knowledge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/training_button"
+        app:layout_constraintVertical_bias="0.8"
+        android:onClick="tana"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
